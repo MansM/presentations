@@ -1,5 +1,5 @@
 ---
-title: Snippets
+title: Mans
 theme: white
 revealOptions:
     transition: slide
@@ -9,3 +9,7 @@ revealOptions:
 ---
 
 # hello world
+
+---
+
+## awesome slide
