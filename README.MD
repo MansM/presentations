@@ -8,7 +8,7 @@ You can find them at [http://www.mansm.io/presentations/](http://www.mansm.io/pr
 [build Widget]: https://travis-ci.org/MansM/presentations.svg?branch=master
 
 ## I want this TOO!!!
-* copy/paste the .travis.yml & fix.sh to your repo. 
+* copy/paste the .travis.yml & compile.sh to your repo. 
 * have all the presentations in your root folder of your repo 
 * sign up at https://travis-ci.org/
 * create a token at github: https://github.com/settings/tokens (public_repo is the only needed checkmark)

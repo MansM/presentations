@@ -9,6 +9,7 @@ do
   sed -e "s#src=\"images#src=\"../images#g" -i $f # html images fix
   sed -e "s#(images/#(../images/#g" -i $f #md images fix
   reveal-md $f --static ${f%.*}
+  # fixing locations of css, js and plugin files
   sed -e "s#href=\"/css#href=\"/presentations/${f%.*}/css#g" -i ${f%.*}/index.html
   sed -e "s#src=\"/lib#src=\"/presentations/${f%.*}/lib#g" -i ${f%.*}/index.html
   sed -e "s#src=\"/js#src=\"/presentations/${f%.*}/js#g" -i ${f%.*}/index.html

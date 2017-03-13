@@ -6,9 +6,9 @@ install:
   - npm install -g reveal-md@0.1.1
 
 script:
-  - chmod +x fix.sh
-  - ./fix.sh
-  
+  - chmod +x compile.sh
+  - ./compile.sh
+
 deploy:
   provider: pages
   skip_cleanup: true
