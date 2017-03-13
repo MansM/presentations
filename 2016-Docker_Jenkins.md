@@ -4,7 +4,9 @@ theme: white
 revealOptions:
     transition: slide
     backgroundTransition: slide
-
+todo:
+   add process of how docker slaves are being setup
+   remix types in scale out
 ---
 
 # Docker & Jenkins
@@ -13,10 +15,6 @@ revealOptions:
 * Mans Matulewicz
 * Dev Engineer
 
-
-Note: add process of how docker slaves are being setup
-
-Note: remix types in scale out
 
 ----
 
