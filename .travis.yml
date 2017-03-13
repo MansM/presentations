@@ -10,7 +10,7 @@ install:
   - npm install -g reveal-md@0.1.1
 
 script:
-  - for f in *.md; do echo $f; reveal-md $f.md --static $f; done
+  - for f in *.md; do echo $f; reveal-md $f --static ${$f%.*}; done
   
 
 deploy:
