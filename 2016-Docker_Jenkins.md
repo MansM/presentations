@@ -15,6 +15,7 @@ revealOptions:
 
 
 Note: add process of how docker slaves are being setup
+
 Note: remix types in scale out
 
 ----
