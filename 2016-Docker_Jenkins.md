@@ -12,6 +12,7 @@ TODO: remix types in scale out
 
 
 ---
+
 # Docker & Jenkins
 
 
