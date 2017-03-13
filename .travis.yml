@@ -5,12 +5,12 @@ node_js:
   - "6.1"
 
 install:
-  - sudo apt-get update
+#  - sudo apt-get update
 #  - sudo apt-get install -y nodejs
   - npm install -g reveal-md@0.1.1
 
 script:
-  - for f in *.md; do echo $f; reveal-md $f --static ${$f%.*}; done
+  - for f in *.md; do echo $f; reveal-md $f --static ${f%.*}; done
   
 
 deploy:
