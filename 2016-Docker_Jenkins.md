@@ -23,7 +23,7 @@ TODO: remix types in scale out
 <table>
 <tr>
 <td>
-<img src="images/2016-Docker_Jenkins/me.jpg" width="150">
+<img src="../images/2016-Docker_Jenkins/me.jpg" width="150">
 </td><td style="vertical-align:middle">
 <ul>
 <li>@Mans_M</li>
@@ -80,7 +80,7 @@ TODO: remix types in scale out
 <table>
 <tr>
 <td style="vertical-align:middle">
-<img src="images/2016-Docker_Jenkins/JenkinsContainer.png" width="350">
+<img src="../images/2016-Docker_Jenkins/JenkinsContainer.png" width="350">
 </td><td style="vertical-align:middle; align:right">
 <ul>
 <li>Easy to use</li>
@@ -151,7 +151,7 @@ USER jenkins
 <table>
 <tr>
 <td style="vertical-align:middle">
-<img src="images/2016-Docker_Jenkins/JenkinsBuildslaves.png" width="350">
+<img src="../images/2016-Docker_Jenkins/JenkinsBuildslaves.png" width="350">
 </td><td style="vertical-align:middle; align:right">
 <ul>
 <li>What are buildslaves?</li>
