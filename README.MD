@@ -10,4 +10,4 @@ You can find them at [http://www.mansm.io/presentations/](http://www.mansm.io/pr
 * have all the presentations in your root folder of your repo 
 * sign up at https://travis-ci.org/
 * create a token at github: https://github.com/settings/tokens (public_repo is the only needed checkmark)
-* create an environment with the name GITHUB_TOKEN and as value the token at https://travis-ci.org/<username>/<repo>/settings
+* create an environment with the name GITHUB_TOKEN and as value the token at https://travis-ci.org/username/repo/settings
