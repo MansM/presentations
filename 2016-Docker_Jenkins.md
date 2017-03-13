@@ -7,11 +7,8 @@ revealOptions:
 
 ---
 
-TODO: add process of how docker slaves are being setup
-TODO: remix types in scale out
-
-
----
+Note: add process of how docker slaves are being setup
+Note: remix types in scale out
 
 # Docker & Jenkins
 
