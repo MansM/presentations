@@ -10,7 +10,8 @@ install:
   - npm install -g reveal-md@0.1.1
 
 script:
-  - reveal-md test.md --static
+  - for f in *.md; do echo $f; reveal-md $f.md --static $f; done
+  
 
 deploy:
   provider: pages
