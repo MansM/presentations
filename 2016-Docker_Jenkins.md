@@ -123,7 +123,7 @@ USER jenkins
 
 ## Everything happyflow?
 
-![](unicorn.jpg)
+![](images/2016-Docker_Jenkins/unicorn.jpg)
 
 ----
 
