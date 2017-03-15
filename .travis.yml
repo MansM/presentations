@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "6.1"
+
+install:
+  - npm install -g reveal-md@0.1.1
+
+script:
+  - chmod +x compile.sh
+  - ./compile.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master

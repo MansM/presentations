@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Snippets</title>
+        <link rel="stylesheet" href="/presentations/snippets/css/reveal.css">
+        <link rel="stylesheet" href="/presentations/snippets/css/theme/white.css" id="theme">
+        <link rel="stylesheet" href="/presentations/snippets/css/highlight/zenburn.css">
+        <link rel="stylesheet" href="/presentations/snippets/css/print/paper.css" type="text/css" media="print">
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template">
+
+# Snippets
+</script></section><section  data-markdown><script type="text/template">
+<table>
+<tr>
+<td>
+<img src="../images/snippets/me.jpg" width="150">
+</td><td style="vertical-align:middle">
+<ul>
+<li>@Mans_M</li>
+<li>github.com/MansM</li>
+<li>mans@mansm.io</li>
+</ul>
+
+</td></tr></table>
+</script></section><section  data-markdown><script type="text/template">
+## Bullet by Bullet
+
+* bullet 1 <!-- .element: class="fragment fade-up"  -->
+* bullet 2 <!-- .element: class="fragment fade-up"  -->
+* bullet 3 <!-- .element: class="fragment fade-down"  -->
+* bullet 4 <!-- .element: class="fragment fade-right"  -->
+* bullet 5 <!-- .element: class="fragment fade-left"  -->
+</script></section><section  data-markdown><script type="text/template">
+# Image sizing
+
+![alt](../images/snippets/me.jpg) <!-- .element: style="height: 50vh" -->
+</script></section><section  data-markdown><script type="text/template">
+# Notes
+
+Press S for speaker view
+
+<aside class="notes"><p>speaker notes FTW!</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+# Different background color
+
+ <!-- .slide: data-background="#000000" -->
+</script></section><section  data-markdown><script type="text/template">
+ # svg image
+
+![alt](../images/snippets/SVG_logo.svg) <!-- .element: style="height: 50vh; border-color: #ffffff" -->
+
+</script></section></div>
+        </div>
+
+        <script src="/presentations/snippets/lib/js/head.min.js"></script>
+        <script src="/presentations/snippets/js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: '/presentations/snippets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: '/presentations/snippets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: '/presentations/snippets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: '/presentations/snippets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: '/presentations/snippets/plugin/zoom-js/zoom.js', async: true },
+              { src: '/presentations/snippets/plugin/notes/notes.js', async: true },
+              { src: '/presentations/snippets/plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {"transition":"slide","backgroundTransition":"slide","slideNumber":true};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+        </script>
+        
+    </body>
+</html>
