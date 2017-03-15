@@ -3,9 +3,7 @@
 This repository contains my presentations and a travis-ci workflow to create github pages for them.
 You can find them at [http://www.mansm.io/presentations/](http://www.mansm.io/presentations/)
 
-[![build Widget]][build]
-[build]: https://travis-ci.org/MansM/presentations
-[build Widget]: https://travis-ci.org/MansM/presentations.svg?branch=master
+[![Build Status](https://travis-ci.org/MansM/presentations.svg?branch=master)](https://travis-ci.org/MansM/presentations)
 
 ## I want this TOO!!!
 * copy/paste the .travis.yml & compile.sh to your repo. 
