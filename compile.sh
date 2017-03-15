@@ -1,5 +1,7 @@
 #!/bin/bash
 
+repo=$(basename $(git remote show origin -n | grep "Fetch URL:" |awk {'print $3 '}))
+repo=${repo%.*}
 echo "<html><head><title>Presentations</title></head><body>" > index.html
 echo "<h1>Presentations</h1>" >> index.html
 echo "<ul>" >> index.html
@@ -10,11 +12,11 @@ do
   sed -e "s#(images/#(../images/#g" -i $f #md images fix
   reveal-md $f --static ${f%.*}
   # fixing locations of css, js and plugin files
-  sed -e "s#href=\"/css#href=\"/presentations/${f%.*}/css#g" -i ${f%.*}/index.html
-  sed -e "s#src=\"/lib#src=\"/presentations/${f%.*}/lib#g" -i ${f%.*}/index.html
-  sed -e "s#src=\"/js#src=\"/presentations/${f%.*}/js#g" -i ${f%.*}/index.html
-  sed -e "s#src: '/lib#src: '/presentations/${f%.*}/lib#g" -i ${f%.*}/index.html
-  sed -e "s#src: '/plugin#src: '/presentations/${f%.*}/plugin#g" -i ${f%.*}/index.html
+  sed -e "s#href=\"/css#href=\"/${repo}/${f%.*}/css#g" -i ${f%.*}/index.html
+  sed -e "s#src=\"/lib#src=\"/${repo}/${f%.*}/lib#g" -i ${f%.*}/index.html
+  sed -e "s#src=\"/js#src=\"/${repo}/${f%.*}/js#g" -i ${f%.*}/index.html
+  sed -e "s#src: '/lib#src: '/${repo}/${f%.*}/lib#g" -i ${f%.*}/index.html
+  sed -e "s#src: '/plugin#src: '/${repo}/${f%.*}/plugin#g" -i ${f%.*}/index.html
   echo "<li><a href=\"${f%.*}\">${f%.*}</a></li>" >> index.html
   rm $f
 done
